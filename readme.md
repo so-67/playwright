@@ -22,6 +22,9 @@ newman code ::
 npm install -g newman‍‍‍
 npm install -g newman-reporter-htmlextra
 newman run postman_collection.json -e postman_environment.json -r cli,htmlextra
-
+//////////////////////////////////////////////////////////////////////////////////
+var movies = pm.response.json();
+pm.environment.set("movieId", movies[0].id);
+pm.environment.set("availableSeats", movies[0].availableSeats);
 
     
