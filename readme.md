@@ -16,6 +16,12 @@ code for install playwright ::
 6 - npx playwright show-report
 7 - for use code generator :: 
     npx playwright codegen --channel=chrome "https://example.com"
+///////////////////////////////////////////////////////////////////////////   
+
+newman code ::
+npm install -g newman‍‍‍
+npm install -g newman-reporter-htmlextra
+newman run postman_collection.json -e postman_environment.json -r cli,htmlextra
 
 
     
