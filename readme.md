@@ -1,4 +1,4 @@
-code for install playwright ::
+code for install playwright :: 
 1 - create folder on path
 2 - open cmd on folder
 3 - enter code on cmd :: 
