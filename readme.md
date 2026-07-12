@@ -26,5 +26,10 @@ newman run postman_collection.json -e postman_environment.json -r cli,htmlextra
 var movies = pm.response.json();
 pm.environment.set("movieId", movies[0].id);
 pm.environment.set("availableSeats", movies[0].availableSeats);
+//////////////////////////////////////////////////////////////////////////////////
+
+var sessionInfo = pm.response.json();
+pm.environment.set("sessionId", sessionInfo.sessionId);
+pm.environment.set("state", sessionInfo.state);
 
     
